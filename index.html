@@ -1,11 +1,158 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Shopify Demo Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopify Demo Portfolio | Hopkins Asalache</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;900&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle at top, #000000, #111111, #000000);
+      color: #f5c542;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      letter-spacing: 3px;
+      background: linear-gradient(90deg, #f0c75e, #d4af37, #f5c542);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 0 15px rgba(245, 197, 66, 0.3);
+      animation: shimmer 3s infinite linear;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #e0e0e0;
+      margin-top: 10px;
+      letter-spacing: 1px;
+    }
+
+    @keyframes shimmer {
+      0% { background-position: -500px; }
+      100% { background-position: 500px; }
+    }
+
+    section {
+      text-align: center;
+      margin: 60px auto;
+      max-width: 700px;
+      padding: 20px;
+      animation: fadeInUp 1.5s ease-in-out;
+    }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .btn-container {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .luxury-btn {
+      background: linear-gradient(145deg, #d4af37, #f5c542, #c59b15);
+      border: none;
+      color: black;
+      font-weight: 600;
+      padding: 15px 35px;
+      font-size: 1rem;
+      border-radius: 50px;
+      box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+      transition: all 0.4s ease;
+      cursor: pointer;
+      letter-spacing: 1px;
+    }
+
+    .luxury-btn:hover {
+      background: linear-gradient(145deg, #f5c542, #d4af37, #ffdc73);
+      transform: scale(1.08);
+      box-shadow: 0 0 30px rgba(245, 197, 66, 0.6);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      border-top: 1px solid rgba(212, 175, 55, 0.3);
+      color: #888;
+      font-size: 0.9rem;
+      margin-top: 50px;
+    }
+
+    .floating-gold {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    .floating-gold span {
+      position: absolute;
+      display: block;
+      width: 10px;
+      height: 10px;
+      background: rgba(245, 197, 66, 0.7);
+      border-radius: 50%;
+      animation: float 8s linear infinite;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0) scale(0.8);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-100vh) scale(1.5);
+        opacity: 0;
+      }
+    }
+  </style>
 </head>
 <body>
-    <h1>Welcome to My Shopify Demo</h1>
-    <p>This is a sample Shopify storefront demo created for portfolio purposes.</p>
+  <div class="floating-gold">
+    <span style="left:10%; animation-delay:0s;"></span>
+    <span style="left:30%; animation-delay:2s;"></span>
+    <span style="left:50%; animation-delay:4s;"></span>
+    <span style="left:70%; animation-delay:6s;"></span>
+    <span style="left:90%; animation-delay:8s;"></span>
+  </div>
+
+  <header>
+    <h1>Shopify Demo by Hopkins Asalache</h1>
+    <p>Where Innovation Meets Luxury — A Futuristic Shopify Experience</p>
+  </header>
+
+  <section>
+    <p>Step into a curated world of elegant digital craftsmanship. This Shopify demo is designed to highlight seamless user experience, luxury brand aesthetics, and future-ready eCommerce design.</p>
+
+    <div class="btn-container">
+      <button class="luxury-btn" onclick="alert('Redirecting to live demo...')">View Live Demo</button>
+      <button class="luxury-btn" onclick="alert('Opening design showcase...')">Design Showcase</button>
+      <button class="luxury-btn" onclick="alert('Connecting with Hopkins...')">Connect</button>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Hopkins Asalache — Futuristic Shopify Design Portfolio
+  </footer>
 </body>
 </html>
