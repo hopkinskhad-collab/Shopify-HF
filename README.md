@@ -45,9 +45,9 @@ From building online communities to running high-performing campaigns, I combine
 ---
 
 ## 📫 Contact Me
-**Email:** kinsasalache@gmail.com  
-**LinkedIn:** [linkedin.com/in/kinsasalache](#)  
-**Instagram (Brand Work):** [instagram.com/hfgifthub](#)  
+**Email:** hopkinskhad@gmail.com  
+**LinkedIn:** [linkedin.com/in/hopkins-khad-195880383](#)  
+**Instagram (Brand Work):** [instagram.com/king_hopekhad](#)  
 
 ---
 
